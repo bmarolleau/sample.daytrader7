@@ -1,4 +1,4 @@
-FROM quay.io/bmarolleau/open-liberty
+FROM quay.io/bmarolleau/open-liberty:full
 
 COPY --chown=1001:0 daytrader-ee7/src/main/liberty/config/server.xml /config/server.xml
 COPY --chown=1001:0 daytrader-ee7/target/daytrader-ee7.ear /config/apps
